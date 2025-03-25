@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech.Care - Patient Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Tech.Care Logo">
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Overview</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-user-group"></i> Patients</a></li>
+                    <li><a href="#"><i class="far fa-calendar"></i> Schedule</a></li>
+                    <li><a href="#"><i class="far fa-message"></i> Message</a></li>
+                    <li><a href="#"><i class="fas fa-money-bill-transfer"></i> Transactions</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-profile">
+                <div class="profile-info">
+                    <img src="assets/doctor.png" alt="Dr. Jose Simmons">
+                    <div class="profile-details">
+                        <h3>Dr. Jose Simmons</h3>
+                        <p>General Practitioner</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="icon-btn"><i class="fas fa-gear"></i></button>
+                    <button class="icon-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <!-- Patients Sidebar -->
+            <aside class="patients-sidebar">
+                <div class="sidebar-header">
+                    <h2>Patients</h2>
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <ul class="patients-list">
+                    <li>
+                        <img src="assets/emily.png" alt="Emily Williams">
+                        <div class="patient-info">
+                            <h3>Emily Williams</h3>
+                            <p>Female, 18</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/ryan.png" alt="Ryan Johnson">
+                        <div class="patient-info">
+                            <h3>Ryan Johnson</h3>
+                            <p>Male, 45</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/brandon.png" alt="Brandon Mitchell">
+                        <div class="patient-info">
+                            <h3>Brandon Mitchell</h3>
+                            <p>Male, 36</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li class="active">
+                        <img src="assets/jessica-small.png" alt="Jessica Taylor">
+                        <div class="patient-info">
+                            <h3>Jessica Taylor</h3>
+                            <p>Female, 28</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/samantha.png" alt="Samantha Johnson">
+                        <div class="patient-info">
+                            <h3>Samantha Johnson</h3>
+                            <p>Female, 55</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/ashley.png" alt="Ashley Martinez">
+                        <div class="patient-info">
+                            <h3>Ashley Martinez</h3>
+                            <p>Female, 54</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/olivia.png" alt="Olivia Brown">
+                        <div class="patient-info">
+                            <h3>Olivia Brown</h3>
+                            <p>Female, 32</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/tyler.png" alt="Tyler Davis">
+                        <div class="patient-info">
+                            <h3>Tyler Davis</h3>
+                            <p>Male, 19</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/kevin.png" alt="Kevin Anderson">
+                        <div class="patient-info">
+                            <h3>Kevin Anderson</h3>
+                            <p>Male, 30</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/dylan.png" alt="Dylan Thompson">
+                        <div class="patient-info">
+                            <h3>Dylan Thompson</h3>
+                            <p>Male, 36</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/nathan.png" alt="Nathan Evans">
+                        <div class="patient-info">
+                            <h3>Nathan Evans</h3>
+                            <p>Male, 58</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                    <li>
+                        <img src="assets/mike.png" alt="Mike Nolan">
+                        <div class="patient-info">
+                            <h3>Mike Nolan</h3>
+                            <p>Male, 31</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Patient Details -->
+            <section class="diagnosis-section">
+                <h2>Diagnosis History</h2>
+                <div class="blood-pressure-chart">
+                    <div class="chart-header">
+                        <h3>Blood Pressure</h3>
+                        <div class="time-filter">
+                            <span>Last 6 months</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="bloodPressureChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item systolic">
+                            <h4>Systolic</h4>
+                            <div class="value">160</div>
+                            <div class="status higher">
+                                <i class="fas fa-arrow-up"></i> Higher than Average
+                            </div>
+                        </div>
+                        <div class="legend-item diastolic">
+                            <h4>Diastolic</h4>
+                            <div class="value">78</div>
+                            <div class="status lower">
+                                <i class="fas fa-arrow-down"></i> Lower than Average
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vitals-container">
+                    <div class="vital-card respiratory">
+                        <div class="vital-icon">
+                            <img src="assets/respiratory.png" alt="Respiratory">
+                        </div>
+                        <div class="vital-details">
+                            <h3>Respiratory Rate</h3>
+                            <div class="vital-value">20 bpm</div>
+                            <div class="vital-status normal">Normal</div>
+                        </div>
+                    </div>
+                    <div class="vital-card temperature">
+                        <div class="vital-icon">
+                            <img src="assets/temperature.png" alt="Temperature">
+                        </div>
+                        <div class="vital-details">
+                            <h3>Temperature</h3>
+                            <div class="vital-value">98.6°F</div>
+                            <div class="vital-status normal">Normal</div>
+                        </div>
+                    </div>
+                    <div class="vital-card heart-rate">
+                        <div class="vital-icon">
+                            <img src="assets/heart.png" alt="Heart Rate">
+                        </div>
+                        <div class="vital-details">
+                            <h3>Heart Rate</h3>
+                            <div class="vital-value">78 bpm</div>
+                            <div class="vital-status lower">
+                                <i class="fas fa-arrow-down"></i> Lower than Average
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagnostic-list">
+                    <h2>Diagnostic List</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Problem/Diagnosis</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hypertension</td>
+                                <td>Chronic high blood pressure</td>
+                                <td class="status-observation">Under Observation</td>
+                            </tr>
+                            <tr>
+                                <td>Type 2 Diabetes</td>
+                                <td>Insulin resistance and elevated blood sugar</td>
+                                <td class="status-cured">Cured</td>
+                            </tr>
+                            <tr>
+                                <td>Asthma</td>
+                                <td>Recurrent episodes of bronchial constriction</td>
+                                <td class="status-inactive">Inactive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Patient Profile -->
+            <aside class="patient-profile">
+                <div class="profile-image">
+                    <img src="assets/jessica.png" alt="Jessica Taylor">
+                </div>
+                <h2>Jessica Taylor</h2>
+                
+                <div class="patient-details">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="far fa-calendar"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Date Of Birth</h4>
+                            <p>August 23, 1996</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-venus"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Gender</h4>
+                            <p>Female</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Contact Info</h4>
+                            <p>(415) 555-1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Emergency Contacts</h4>
+                            <p>(415) 555-5678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Insurance Provider</h4>
+                            <p>Sunrise Health Assurance</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="show-all-btn">Show All Information</button>
+                
+                <div class="lab-results">
+                    <h3>Lab Results</h3>
+                    <ul>
+                        <li>
+                            <span>Blood Tests</span>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li>
+                            <span>CT Scans</span>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li>
+                            <span>Radiology Reports</span>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li>
+                            <span>X-Rays</span>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </li>
+                        <li>
+                            <span>Urine Test</span>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
